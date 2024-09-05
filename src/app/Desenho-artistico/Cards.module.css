@@ -1,0 +1,164 @@
+.all {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.title,
+.sub_title {
+  color: #ffc219;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.sub_title {
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 28px;
+}
+
+.cards_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.cards {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cards:hover {
+  transform: scale(1.15);
+  transition: 0.8s;
+}
+
+@media (max-width: 1440px) {
+  .title {
+    font-size: 46px;
+  }
+
+  .sub_title {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    font-size: 24px;
+  }
+
+  .cards {
+    width: 225px;
+  }
+
+  .cards:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .sub_title {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .cards_container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .cards {
+    width: 250px;
+    margin-top: 25px;
+  }
+
+  .cards:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
+    font-size: 38px;
+  }
+
+  .sub_title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .cards_container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .cards {
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .cards:hover {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 425px){
+  .title {
+    font-size: 34px;
+  }
+
+  .sub_title {
+    font-size: 32px;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .cards_container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .cards {
+    width: 250px;
+    margin-top: 10px;
+  }
+
+  .cards:hover {
+    transform: scale(1.02);
+  }
+}

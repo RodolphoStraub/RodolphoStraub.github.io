@@ -1,0 +1,154 @@
+.all {
+  background-image: url(../../../public/bg_computer.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+.container {
+  width: 700px;
+  margin-left: 15%;
+}
+
+.text_container {
+  width: 660px;
+}
+
+.title {
+  width: 680px;
+  font-size: 66px;
+  margin-bottom: 50px;
+  font-weight: 350;
+  padding: 160px 0 0;
+}
+
+.context {
+  width: 630px;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width: 1440px) {
+  .all {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+    width: auto;
+    margin-right: 30%;
+    margin-top: 0px;
+  }
+
+  .title {
+    width: 450px;
+    text-align: center;
+  }
+
+  .context {
+    width: 450px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: auto;
+    margin-right: 40%;
+  }
+
+  .title {
+    width: 350px;
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .context {
+    width: 350px;
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: auto;
+    margin-right: 50%;
+  }
+
+  .title {
+    width: 280px;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .context {
+    width: 280px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 425px) {
+  .all {
+    margin-top: 0px;
+    background-image: url(../../../public/bg-designkids.png);
+    height: 550px;
+  }
+
+  .container {
+    width: auto;
+    margin-right: 50%;
+  }
+
+  .text_container {
+    width: 100px;
+  }
+
+  .title {
+    width: 280px;
+    text-align: center;
+    font-size: 32px;
+    padding: 50px 0 0;
+  }
+
+  .context {
+    width: 280px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    width: 260px;
+    text-align: center;
+    font-size: 32px;
+    padding: 50px 0 0;
+  }
+
+  .context {
+    width: 260px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    width: 230px;
+    text-align: center;
+    font-size: 32px;
+    padding: 50px 0 0;
+  }
+
+  .context {
+    width: 230px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

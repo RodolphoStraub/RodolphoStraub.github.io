@@ -1,0 +1,234 @@
+.all {
+  background-image: url(../../../public/bg-designkids.png);
+  height: 500px;
+}
+
+.container {
+  width: 70%;
+  margin-left: 15%;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.vantagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vantagens h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.vantagens ul {
+  margin-bottom: 50px;
+}
+
+.vantagens li {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.info h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 1px;
+}
+
+.button {
+  color: black;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: black;
+  color: #ffc219;
+}
+
+@media (max-width: 1440px) {
+  .all {
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vantagens h1 {
+    font-size: 38px;
+  }
+
+  .vantagens li {
+    font-size: 24px;
+  }
+
+  .info h1 {
+    font-size: 38px;
+  }
+
+  .info h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .button {
+    padding: 13px 23px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .all {
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vantagens {
+    margin-bottom: 40px;
+  }
+
+  .vantagens h1 {
+    font-size: 36px;
+  }
+
+  .vantagens li {
+    font-size: 22px;
+  }
+
+  .info h1 {
+    font-size: 36px;
+  }
+
+  .info h2 {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .button {
+    padding: 13px 23px;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .all {
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vantagens {
+    margin-bottom: 40px;
+  }
+
+  .vantagens h1 {
+    font-size: 32px;
+  }
+
+  .vantagens li {
+    font-size: 20px;
+  }
+
+  .info h1 {
+    font-size: 32px;
+  }
+
+  .info h2 {
+    width: 500px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .all {
+    height: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vantagens {
+    margin-bottom: 40px;
+  }
+
+  .vantagens h1 {
+    font-size: 28px;
+  }
+
+  .vantagens li {
+    font-size: 18px;
+  }
+
+  .info h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .info h2 {
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .button {
+    padding: 8px 18px;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+}

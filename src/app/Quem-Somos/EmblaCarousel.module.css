@@ -1,0 +1,179 @@
+.all {
+  width: 70%;
+  height: 550px;
+  margin-left: 15%;
+  margin-top: 50px;
+}
+
+.title {
+  width: 550px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title_decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 450;
+  margin-bottom: 50px;
+}
+
+.desc {
+  width: 70%;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.desc p {
+  text-indent: 30px;
+}
+
+.main_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.embla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: 5%;
+  height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.embla__container {
+  display: flex;
+  width: 600px;
+}
+
+.embla__slide {
+  display: flex;
+  flex: 0 0 100%;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.pic img {
+  width: 650px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pic_name img {
+  border-radius: 10px;
+}
+
+@media (max-width: 1440px) {
+  .all {
+    height: 650px;
+  }
+
+  .title_decor {
+    font-size: 36px;
+  }
+
+  .desc {
+    width: 70%;
+    font-size: 20px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 1024px) {
+  .all {
+    height: 850px;
+  }
+
+  .main_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desc {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .embla {
+    width: 100%;
+  }
+
+  .embla__container {
+    width: 800px;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .all {
+    height: 800px;
+  }
+
+  .title_decor {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .desc {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .embla {
+    width: 100%;
+  }
+
+  .embla__container {
+    width: 650px;
+    margin-right: 45px;
+
+  }
+
+  .pic img {
+    width: 550px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 425px){
+  .all {
+    height: auto;
+  }
+
+  .title_decor {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .desc {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .embla {
+    width: 100%;
+  }
+
+  .embla__container {
+    width: 50px;
+    margin-right: 100px;
+
+  }
+
+  .pic img {
+    width: 300px;
+    height: 250px;
+  }
+}

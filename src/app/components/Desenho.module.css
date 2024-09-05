@@ -1,0 +1,219 @@
+.all {
+  background-color: #ffc219;
+  padding: 70px 0;
+}
+
+.sub_all {
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+}
+
+.pic {
+  width: 35vw;
+  border-radius: 10px;
+  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.context {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.context p {
+  margin-top: 35px;
+  font-size: 21px;
+  text-align: justify;
+  line-height: 27px;
+}
+
+.button {
+  color: black;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 21px;
+  margin-top: 55px;
+  border: 1px solid #000;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: black;
+  color: #ffc219;
+}
+
+@media (max-width: 1440px) {
+  .all {
+    background-color: #ffc219;
+    padding: 50px 0;
+  }
+
+  .sub_all {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+  }
+
+  .pic {
+    width: 35vw;
+    height: 45vh;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .context img {
+    width: 300px;
+  }
+
+  .context p {
+    margin-top: 35px;
+    font-size: 21px;
+    text-align: justify;
+    line-height: 25px;
+  }
+
+  .button {
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 19px;
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .context {
+    margin-left: 43px;
+  }
+
+  .context p {
+    margin-top: 35px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .pic {
+    margin-top: 100px;
+    width: 35vw;
+    height: 35vh;
+  }
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .context {
+    margin-left: 10px;
+  }
+
+  .context p {
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .pic {
+    width: 0vw;
+    height: 0vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .sub_all {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+  }
+
+  .context {
+    margin-left: 0px;
+  }
+
+  .context img {
+    width: 250px;
+  }
+
+  .context p {
+    width: 100%;
+    margin-top: 35px;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .sub_all {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+  }
+
+  .context {
+    margin-left: 0px;
+  }
+
+  .context img {
+    width: 250px;
+  }
+
+  .context p {
+    width: 100%;
+    margin-top: 35px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 20px;
+  }
+
+  .button {
+    padding: 8px 18px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .sub_all {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+  }
+
+  .context {
+    margin-left: 0px;
+  }
+
+  .context img {
+    width: 100%;
+  }
+
+  .context p {
+    width: 100%;
+    margin-top: 35px;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 16px;
+  }
+
+  .button {
+    padding: 6px 16px;
+    font-size: 16px;
+  }
+}

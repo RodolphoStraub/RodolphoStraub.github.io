@@ -1,0 +1,169 @@
+.bar {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.barinter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 120px;
+  margin-left: 15%;
+}
+
+.logo {
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 160px;
+  height: auto;
+}
+
+.navbar {
+  font-size: 26px;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+.navbar_inter {
+  display: flex;
+  gap: 270px;
+  border-bottom: 2px solid transparent;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  border-bottom: 1px solid #ffc219;
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.bar .open_nav {
+  display: none;
+}
+
+.hidden_nav {
+  visibility: hidden;
+}
+
+@media (max-width: 1440px) {
+  .bar {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+
+  .barinter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 120px;
+    margin-left: 15%;
+    list-style: none;
+  }
+
+  .navbar_inter {
+    gap: 160px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bartext {
+    font-size: 22px;
+  }
+
+  .navbar_inter {
+    gap: 55px;
+  }
+
+  .logo {
+    width: 135px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bartext {
+    font-size: 20px;
+  }
+
+  .navbar_inter {
+    gap: 55px;
+  }
+
+  .navbar_inter {
+    gap: 20px;
+  }
+
+  .link{
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bar {
+    position: fixed;
+  }
+
+  .hidden_nav {
+    visibility: visible;
+    height: 100vh;
+  }
+
+  .barinter2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 150px;
+  }
+
+  .logo {
+    margin-bottom: 0px;
+    cursor: pointer;
+    width: 110px;
+    height: auto;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .bartext {
+    font-size: 26px;
+  }
+
+  .bar .open_nav {
+    display: block;
+    visibility: visible;
+  }
+
+  .hidden_nav .link {
+    font-size: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+  }
+}
