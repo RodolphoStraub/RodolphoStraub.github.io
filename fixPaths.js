@@ -3,7 +3,7 @@ const path = require("path");
 
 const projectName = "dragonball";
 const exportPath = path.join(__dirname, projectName);
-const baseURL = `https://rodolphostraub.github.io/${projectName}`;
+const baseURL = `http://localhost/${projectName}`;
 
 // Função para corrigir os caminhos
 function fixPaths(dir) {
