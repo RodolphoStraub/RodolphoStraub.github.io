@@ -483,24 +483,5 @@
       ]);
     </script>
 
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        // Impede o comportamento padrão de navegar até a âncora
-        e.preventDefault();
-
-        // Pega o ID do alvo
-        const targetID = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetID);
-
-        // Se o elemento alvo existir, faz a rolagem suave até ele
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  </script>
   </body>
 </html>
