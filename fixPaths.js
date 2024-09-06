@@ -3,7 +3,7 @@ const path = require('path');
 
 const projectName = "graph-it";
 const exportPath = path.join(__dirname, projectName);
-const baseURL = `https://rodolphostraub.github.io/${projectName}/`;
+const baseURL = `https://rodolphostraub.github.io/${projectName}`;
 
 // Função para corrigir os caminhos
 function fixPaths(dir) {
@@ -20,14 +20,14 @@ function fixPaths(dir) {
       let content = fs.readFileSync(filePath, 'utf8');
 
       // Adicione a base URL aos caminhos normais (exceto aqueles que começam com "/_next" e já contêm "graph-it")
-      content = content.replace(/src="\/(?!_next)(?!graph-it)([^"]*)"/g, `src="${baseURL}$1"`);
-      content = content.replace(/href="\/(?!_next)(?!graph-it)([^"]*)"/g, `href="${baseURL}$1"`);
+      content = content.replace(/src="\/(?!_next)(?!graph-it)([^"]*)"/g, `src="${baseURL}/$1"`);
+      content = content.replace(/href="\/(?!_next)(?!graph-it)([^"]*)"/g, `href="${baseURL}/$1"`);
 
       // Adicione a base URL para caminhos dentro de scripts (com \")
-      content = content.replace(/\\"src\\":\\"\/(?!_next)(?!graph-it)([^\\"]*)\\"/g, `\\"src\\":\\"${baseURL}$1\\"`);
-      content = content.replace(/\\"href\\":\\"\/(?!_next)(?!graph-it)([^\\"]*)\\"/g, `\\"href\\":\\"${baseURL}$1\\"`);
+      content = content.replace(/\\"src\\":\\"\/(?!_next)(?!graph-it)([^\\"]*)\\"/g, `\\"src\\":\\"${baseURL}/$1\\"`);
+      content = content.replace(/\\"href\\":\\"\/(?!_next)(?!graph-it)([^\\"]*)\\"/g, `\\"href\\":\\"${baseURL}/$1\\"`);
 
-      content = content.replace(new RegExp(`${projectName}/_next/`, 'g'),`${baseURL}_next/`)
+      content = content.replace(new RegExp(`/${projectName}/_next/`, 'g'),`${baseURL}/_next/`)
       // Salve o arquivo com os caminhos corrigidos
       fs.writeFileSync(filePath, content, 'utf8');
     }
