@@ -55,10 +55,8 @@ function fixPaths(dir) {
         `src="${baseURL}/$1"`
       );
 
-      content = content.replace(/(?<=\{src:")\/[a-zA-Z0-9.]+(?=",alt:)/g, `${baseURL}$&`);
+      content = content.replace(/src:"\/([a-zA-Z0-9\-_.\/]+)"/g, `src:"${baseURL}/$1"`);
 
-
-      content = content.replace();
       fs.writeFileSync(filePath, content, "utf8");
     }
   });
