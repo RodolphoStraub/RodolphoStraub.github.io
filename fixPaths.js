@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const projectName = "dragonball";
+const projectName = "interiorbr";
 const exportPath = path.join(__dirname, projectName);
 const baseURL = `https://rodolphostraub.github.io/${projectName}`;
 
@@ -22,19 +22,19 @@ function fixPaths(dir) {
     ) {
       let content = fs.readFileSync(filePath, "utf8");
  
-      // Adicione a base URL aos caminhos normais (exceto aqueles que começam com "/_next" e já contêm "dragonball")
+      // Adicione a base URL aos caminhos normais (exceto aqueles que começam com "/_next" e já contêm "interiorbr")
       content = content.replace(
-        /src="\/(?!_next)(?!dragonball)([^"]*)"/g,
+        /src="\/(?!_next)(?!interiorbr)([^"]*)"/g,
         `src="${baseURL}/$1"`
       );
 
       // Adicione a base URL para caminhos dentro de scripts (com \")
       content = content.replace(
-        /\\"src\\":\\"\/(?!_next)(?!dragonball)([^\\"]*)\\"/g,
+        /\\"src\\":\\"\/(?!_next)(?!interiorbr)([^\\"]*)\\"/g,
         `\\"src\\":\\"${baseURL}/$1\\"`
       );
       content = content.replace(
-        /\\"href\\":\\"\/(?!_next)(?!dragonball)([^\\"]*)\\"/g,
+        /\\"href\\":\\"\/(?!_next)(?!interiorbr)([^\\"]*)\\"/g,
         `\\"href\\":\\"${baseURL}/$1\\"`
       );
 
